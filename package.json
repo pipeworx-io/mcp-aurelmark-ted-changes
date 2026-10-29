@@ -1,12 +1,20 @@
 {
   "name": "@pipeworx/mcp-aurelmark-ted-changes",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Aurelmark TED deadline changes — per-lot old/new submission deadlines for enrolled EU tenders, each change tied to both official TED notices.",
   "type": "module",
-  "main": "src/index.ts",
-  "types": "src/index.ts",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./tools.json": "./tools.json",
+    "./package.json": "./package.json"
+  },
   "bin": {
     "mcp-aurelmark-ted-changes": "bin/cli.js"
+  },
+  "files": ["bin/", "lib/", "tools.json", "server.json"],
+  "engines": {
+    "node": ">=18"
   },
   "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "aurelmark-ted-changes"],
   "license": "MIT",
@@ -14,19 +22,12 @@
     "type": "git",
     "url": "git+https://github.com/pipeworx-io/mcp-aurelmark-ted-changes.git"
   },
-  "scripts": {
-    "typecheck": "tsc --noEmit"
-  },
-  "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.30.0",
-    "tsx": "^4.19.0"
-  },
-  "devDependencies": {
-    "typescript": "^5.9.3",
-    "@cloudflare/workers-types": "^4.20260405.1"
-  },
+  "mcpName": "io.github.pipeworx-io/aurelmark-ted-changes",
   "pipeworx": {
-    "sourceHash": "v1-175b2cd4a5a93d3b3d3b1a90a1168543d2a132b40c4e33b1c902214058368ec5",
-    "sourceCommit": "f54ad77e789f27fe393978f9c080b5b18c87bb4f"
+    "mode": "gateway",
+    "slug": "aurelmark-ted-changes",
+    "gatewaySlug": "aurelmark-ted-changes",
+    "sourceHash": "v1-e5560732d2f8d505340b6d8d9456220b2243b18a05a8fa3440e3000f71368f16",
+    "sourceCommit": "305e2cd138cb71158e9c1e664ea0e6739bd40801"
   }
 }
