@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-aurelmark-ted-changes",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Aurelmark TED deadline changes — per-lot old/new submission deadlines for enrolled EU tenders, each change tied to both official TED notices.",
   "type": "module",
   "main": "lib/index.js",
@@ -27,7 +27,7 @@
     "mode": "gateway",
     "slug": "aurelmark-ted-changes",
     "gatewaySlug": "aurelmark-ted-changes",
-    "sourceHash": "v1-e5560732d2f8d505340b6d8d9456220b2243b18a05a8fa3440e3000f71368f16",
-    "sourceCommit": "305e2cd138cb71158e9c1e664ea0e6739bd40801"
+    "sourceHash": "v1-e56165daddfb3051528ef9801a5cd4aa1fac001a574c229eea5f4f5c839c9ea7",
+    "sourceCommit": "5cb09714e895571153f3d9663c36ff0f140cadd6"
   }
 }
